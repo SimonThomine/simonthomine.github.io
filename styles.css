@@ -79,3 +79,129 @@ background-color: #d9e0fe;
 padding: 10px; 
 margin: 20px 0; 
 }
+
+
+.round-btn {
+    display: inline-block;
+    width: 50px; /* Taille du bouton */
+    height: 50px; /* Taille du bouton */
+    border-radius: 50%; /* Bordure ronde */
+    background-color: #007bff; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    text-align: center;
+    line-height: 50px; /* Centrer le texte verticalement */
+    font-size: 24px; /* Taille du texte */
+    text-decoration: none; /* Enlever le soulignage du lien */
+    margin-right: 10px; /* Marge entre les boutons */
+}
+
+
+.education-item {
+    border: 2px solid #007bff; /* Couleur et épaisseur de la bordure */
+    padding: 20px; /* Espace intérieur */
+    border-radius: 10px; /* Bordure arrondie */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre */
+    position: relative; /* Permet de positionner l'image à l'intérieur */
+}
+.education-item img {
+    position: absolute; /* Permet de positionner l'image de manière absolue à l'intérieur du cadre */
+    top: 10px; /* Décalage vers le haut */
+    right: 10px; /* Décalage vers la droite */
+}
+
+.skill {
+    border: 2px solid #007bff; /* Couleur et épaisseur de la bordure */
+    padding: 20px; /* Espace intérieur */
+    border-radius: 10px; /* Bordure arrondie */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre */
+    margin-bottom: 20px; /* Marge inférieure */
+    position: relative; /* Permet de positionner l'image à l'intérieur */
+}
+
+.skill h3 {
+    margin-top: 0; /* Supprimer la marge supérieure du titre */
+}
+
+/* Style des compétences */
+.skill p {
+    margin: 0; /* Supprimer les marges */
+}
+
+
+.publi {
+    
+    padding: 20px; /* Espace intérieur */
+    border-radius: 10px; /* Bordure arrondie */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre */
+    margin-bottom: 20px; /* Marge inférieure */
+    position: relative; /* Permet de positionner l'image à l'intérieur */
+}
+
+.publi h3 {
+    margin-top: 0; /* Supprimer la marge supérieure du titre */
+}
+
+/* Style des compétences */
+.publi p {
+    margin: 0; /* Supprimer les marges */
+}
+
+
+.email-address {
+    display: inline-block; /* Pour que la largeur soit déterminée par le contenu */
+    
+    padding-bottom: 3px; /* Espacement en bas */
+    margin-right: 10px; /* Espacement entre les adresses e-mail */
+}
+
+.email-address i {
+    margin-right: 5px; /* Espacement entre l'icône d'enveloppe et l'adresse e-mail */
+}
+
+.email-address a {
+    color: #007bff; /* Couleur des liens */
+    background-color: #f0f0f0;
+}
+
+.round-btn2 {
+    display: inline-block;
+    padding: 10px 20px; /* Ajuster le rembourrage selon les besoins */
+    border: none;
+    border-radius: 20px; /* Pour un bouton rond */
+    background-color: #007bff; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    font-size: 16px;
+    cursor: pointer; /* Curseur de pointeur au survol */
+}
+
+.round-btn2:hover {
+    background-color: #0056b3; /* Changement de couleur au survol */
+}
+
+
+#accueil .container {
+    background-color: #f9f9f9; /* Couleur de fond du conteneur */
+    border-radius: 10px; /* Bordure arrondie */
+    padding: 20px; /* Espacement intérieur */
+    display: flex; /* Utilisation de la disposition flexbox pour aligner les éléments */
+}
+
+.profile img {
+    border-radius: 50%; /* Bordure arrondie pour l'image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.content {
+    margin-left: 20px; /* Espacement entre l'image et le texte */
+}
+
+h2 {
+    font-size: 24px; /* Taille de la police du titre */
+    color: #000000; /* Couleur du texte du titre */
+    margin-bottom: 10px; /* Marge inférieure pour séparer le titre du contenu */
+}
+
+p {
+    font-size: 16px; /* Taille de la police du paragraphe */
+    line-height: 1.5; /* Hauteur de ligne pour une meilleure lisibilité */
+}
