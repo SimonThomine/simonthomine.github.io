@@ -12,6 +12,23 @@ body {
     padding: 20px;
 }
 
+.container-flex{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex; /* Ajout de l'affichage flex pour utiliser la disposition flexbox */
+    align-items: center; /* Aligner les éléments verticalement */
+}
+
+.profile {
+    margin-right: 20px; /* espace entre la photo et le texte */
+}
+
+.profile img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Styles de l'en-tête */
 header {
     background-color: #333;
@@ -54,4 +71,12 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+
+.citation {
+border: 1px solid #ddd; /* Couleur de la bordure */
+background-color: #f9f9f9; /* Couleur de fond */
+padding: 10px; /* Espace intérieur */
+margin: 20px 0; /* Marge extérieure */
 }

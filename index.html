@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -13,103 +14,159 @@
             <ul>
                 <li><a href="#accueil">Home</a></li>
                 <li><a href="#projets">Projects</a></li>
-                <li><a href="#a-propos">Competences</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="accueil">
-        <div class="container">
-            <h2>Welcome to my portfolio !</h2>
-            <p>I'm a french ph.D student in computer vision and deep learning at the University of technology of Troyes and the start-up Aquilae. I'm currently working in the domain of industrial unsupervised anomaly detection especially for textures.    </p>
+        <div class="container-flex">
+            <div class="profile">
+                <img src="images/photo.jpeg" alt="Photo">
+            </div>
+            <div class="content">
+                <h2>Welcome to my portfolio !</h2>
+                <p>I'm a french ph.D student in computer vision and deep learning at the University of technology of Troyes. I'm currently working in the domain of industrial unsupervised anomaly detection especially for textures.    </p>
+            </div>
         </div>
     </section>
+    
 
     <section id="projets">
         <div class="container">
-            <h2>My projects</h2>
-            <!-- Liste de vos projets avec des liens vers des démos, des dépôts GitHub, etc. -->
+            <h2>My projects &#128736;</h2>
+            <div class="project">
+                <h3>Industrial Defect Lib</h3>
+                <p>This project introduce a new library dessigned to generate synthetic defects based on proposed methods from the litterature.
+                    Currently, the library is able to generate defects for the following defects : NSA, textural, structural, blur and cutpaste.
+                </p>
+                <img src="images/Nsa.png" alt="Nsa defect generation example" width="900" height="350"><br>
+                &#128187; <a href="https://github.com/SimonThomine/IndustrialDefectLib"> Github Page</a><br>
+                &#129303; <a href="https://huggingface.co/spaces/SimTho/IndustrialDefects"> HuggingFace Demo</a>
+            </div>
             <div class="project">
                 <h3>Industrial textile dataset</h3>
                 <p>This project introduce a new dataset dessigned for fabric anomaly detection. It contains 10 categories of textile with a wide variety of defects extracted from a textile factory with high resolution cameras.</p>
-                <a href="https://github.com/SimonThomine/IndustrialTextileDataset">github page</a>
+                <img src="images/ITD.png" alt="Examples of defect-free and defective images from ITD" width="900" height="300"><br>
+                &#128187; <a href="https://github.com/SimonThomine/IndustrialTextileDataset"> Github Page</a>
             </div>
-            <!-- Ajoutez d'autres projets selon vos besoins -->
+            
         </div>
     </section>
-
     <section id="publications">
         <div class="container">
-            <h2>Publications</h2>
-            <!-- Liste de vos projets avec des liens vers des démos, des dépôts GitHub, etc. -->
+            <h2>Publications &#128218;</h2>
             <div class="publi">
                 <h3>CSE: Surface Anomaly Detection with Contrastively Selected Embedding</h3>
-                <p>Thomine, Simon and Hichem Snoussi. "CSE: Surface Anomaly Detection with Contrastively Selected Embedding." 2024 International Conference on Computer Vision Theory and Applications (VISAPP 2024). 2024.</p>
-                <a href="https://arxiv.org/pdf/2403.01859.pdf">Link to arxiv pdf</a>
-                <!--<a href="https://arxiv.org/pdf/2306.09859.pdf">Link to github page </a>-->
+                <img src="images/CSE.png" alt="CSE" width="900" height="300"><br>
+                <div class="citation">
+                    <p>Thomine, Simon and Hichem Snoussi. "CSE: Surface Anomaly Detection with Contrastively Selected Embedding." 2024 International Conference on Computer Vision Theory and Applications (VISAPP 2024). 2024.</p>
+                </div>
+                &#128220; <a href="https://arxiv.org/pdf/2403.01859.pdf"> Arxiv</a><br>
+                <i class="fa fa-github" style="font-size:24px"></i>
+                <a href="https://github.com/SimonThomine/CSE">&Github</a>
             </div>
             <div class="publi">
                 <h3>Distillation-based fabric anomaly detection</h3>
-                <p>Thomine, Simon, and Hichem Snoussi. "Distillation-based fabric anomaly detection." Textile Research Journal 94.5-6 (2024): 552-565.</p>
-                <a href="https://arxiv.org/pdf/2401.02287.pdf">Link to arxiv pdf</a>
-                <!--<a href="https://arxiv.org/pdf/2306.09859.pdf">Link to github page </a>-->
+                <img src="images/DistillBased.png" alt="DBFAD" width="900" height="400"><br>
+                <div class="citation">
+                    <p>Thomine, Simon, and Hichem Snoussi. "Distillation-based fabric anomaly detection." Textile Research Journal 94.5-6 (2024): 552-565.</p>
+                </div>
+                &#128220; <a href="https://arxiv.org/pdf/2401.02287.pdf"> Arxiv</a><br>
+                <i class="fa fa-github" style="font-size:24px"></i>
+                <a href="https://github.com/SimonThomine/DBFAD">Github</a>
+            </div>
+            <div class="publi">
+                
+                <h3>Dual Model Knowledge Distillation for Anomaly Detection (preprint) </h3>
+                <img src="images/DualModel.png" alt="DualModel" width="900" height="500"><br>
+                &#128196; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4493018"> Abstract</a><br>
             </div>
             <div class="publi">
                 <h3>FABLE: Fabric Anomaly Detection Automation Process</h3>
-                <p>Thomine, Simon, Hichem Snoussi, and Mahmoud Soua. "FABLE: Fabric Anomaly Detection Automation Process." 2023 International Conference on Control, Automation and Diagnosis (ICCAD). IEEE, 2023.</p>
-                <a href="https://arxiv.org/pdf/2306.10089.pdf#:~:text=Our%20method%20is%20based%20on,avoid%20retraining%20an%20existing%20model.">Link to arxiv pdf</a>
-                <!--<a href="https://arxiv.org/pdf/2306.09859.pdf">Link to github page </a>-->
+                <img src="images/FABLE.png" alt="FABLE" width="900" height="440"><br>
+                <div class="citation">
+                    <p>Thomine, Simon, Hichem Snoussi, and Mahmoud Soua. "FABLE: Fabric Anomaly Detection Automation Process." 2023 International Conference on Control, Automation and Diagnosis (ICCAD). IEEE, 2023.</p>
+                </div>
+                &#128220; <a href="https://arxiv.org/pdf/2306.10089.pdf"> Arxiv</a><br>
+                <i class="fa fa-github" style="font-size:24px"></i>
+                <a href="https://github.com/SimonThomine/FABLE">Github</a>
             </div>
             <div class="publi">
                 <h3>MixedTeacher: Knowledge Distillation for fast inference textural anomaly detection</h3>
-                <p>Thomine, Simon, Hichem Snoussi, and Mahmoud Soua. "MixedTeacher: Knowledge Distillation for fast inference textural anomaly detection." 2023 International Conference on Computer Vision Theory and Applications (VISAPP 2023). 2023.</p>
-                <a href="https://arxiv.org/pdf/2306.09859.pdf">Link to arxiv pdf</a>
-                <!--<a href="https://arxiv.org/pdf/2306.09859.pdf">Link to github page </a>-->
-            </div>
-            <div class="publi">
-                <h3>Dual Model Knowledge Distillation for Anomaly Detection (preprint) </h3>
-                <!--<a href="https://arxiv.org/pdf/2306.09859.pdf">Link to github page </a>-->
+                <img src="images/MixedTeacher.png" alt="MixedTeacher" width="900" height="440"><br>
+                <div class="citation">
+                    <p>Thomine, Simon, Hichem Snoussi, and Mahmoud Soua. "MixedTeacher: Knowledge Distillation for fast inference textural anomaly detection." 2023 International Conference on Computer Vision Theory and Applications (VISAPP 2023). 2023.</p>
+                </div>
+                
+                &#128220; <a href="https://arxiv.org/pdf/2306.09859.pdf">Arxiv</a><br>
+                <i class="fa fa-github" style="font-size:24px"></i>
+                <a href="https://github.com/SimonThomine/MixedTeacher">Github</a>
             </div>
 
-            <!-- Ajoutez d'autres projets selon vos besoins -->
         </div>
     </section>
 
-    <section id="a-propos">
+    <section id="skills">
         <div class="container">
-            <h2>Skills</h2>
+            <h2>Skills &#x1F4BC;</h2>
             <div class="publi">
                 <h3>Theoritical</h3>
                 <p>Convolutional Neural Networks, Knowledge Distillation, Vision Transformer, Object Tracking, LLM/VLM,Application Development, Classical Computer Vision</p>
-                <!--<a href="https://arxiv.org/pdf/2306.09859.pdf">Link to github page </a>-->
             </div>
             <div class="publi">
                 <h3>Software</h3>
                 <p>Python, C++, Pytorch, Transformers, Torchvision, OpenCV, Numpy, Pillow, Timm, Scikit-learn, Scikit-image, QT, TensorRT, Git, Docker</p>
-                <!--<a href="https://arxiv.org/pdf/2306.09859.pdf">Link to github page </a>-->
             </div>
             <div class="publi">
                 <h3>Education</h3>
                 <p>Several teaching experiences at University of Technology of Troyes and ESTP.</p>
-                <!--<a href="https://arxiv.org/pdf/2306.09859.pdf">Link to github page </a>-->
             </div>
             <div class="publi">
                 <h3>Languages</h3>
                 <p>French (fluent), English (proficient) and Spanish (basic)</p>
-                <!--<a href="https://arxiv.org/pdf/2306.09859.pdf">Link to github page </a>-->
             </div>
+        </div>
+    </section>
 
+    <section id="education">
+        <div class="container">
+            <h2>Education &#x1F393;</h2>
+            <div class="education-item">
+                <h3>Ph.D in computer vision and artificial intelligence</h3>
+                <img src="images/utt.jpeg" alt="utt" width="200" height="70"><br>
+                <p>Institution: University of Technology of Troyes</p>
+                <p>Completion Date: Planned to September 2024</p>
+                <p>Description: Detection of visual anomalies on surfaces through unsupervised learning. Applications in the industry of the future.</p>
+            </div>
+            <div class="education-item">
+                <h3>Engineer's degree</h3>
+                <img src="images/TSE.png" alt="tse" width="200" height="70"><br>
+                <p>Institution: Télécom Saint-Etienne</p>
+                <p>Completion Date: September 2020</p>
+                <p>Description: Image application development</p>
+            </div>
+            <div class="education-item">
+                <h3>Online certifications</h3>
+                <img src="images/coursera.png" alt="tse" width="200" height="30"><br>
+                Deep Learning Specialization : <a href="https://coursera.org/share/c601ff2d9bf9759c7fb469b076c2e43b">Certificate</a><br>
+                AI for Medicine Specialization : <a href="https://coursera.org/share/dfc895bdb027119f5275b2946116a116">Certificate</a>
+            </div>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <!-- Formulaire de contact ou informations de contact -->
-            <p>You can contact me at the following email : simon.thomine@utt.fr or simonthomine66@gmail.com</p>
+            <h2>Contact &#x1F4DE;</h2>
+            &#x1F4E7; : simon.thomine@utt.fr or simonthomine66@gmail.com <br>
+            <i class="fa fa-linkedin-square" style="font-size:24px;color:blue"></i>
             <a href="https://www.linkedin.com/in/simon-thomine-287920170/">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=byv8WSAAAAAJ&hl=fr">Google Scholar</a>
+            <i class="fa fa-google"style="font-size:24px;color:blue"></i>
+            <a href="https://scholar.google.com/citations?user=byv8WSAAAAAJ&hl=fr">Google Scholar</a><br>
+            &#129303; <a href="https://huggingface.co/SimTho">HuggingFace</a>
         </div>
     </section>
 
