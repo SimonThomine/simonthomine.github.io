@@ -16,12 +16,12 @@ body {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-    display: flex; /* Ajout de l'affichage flex pour utiliser la disposition flexbox */
-    align-items: center; /* Aligner les éléments verticalement */
+    display: flex; 
+    align-items: center; 
 }
 
 .profile {
-    margin-right: 20px; /* espace entre la photo et le texte */
+    margin-right: 20px; 
 }
 
 .profile img {
@@ -29,7 +29,6 @@ body {
     height: auto;
 }
 
-/* Styles de l'en-tête */
 header {
     background-color: #333;
     color: #fff;
@@ -55,7 +54,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Styles pour les sections */
+
 section {
     padding: 50px 0;
 }
@@ -65,7 +64,7 @@ section h2 {
     margin-bottom: 20px;
 }
 
-/* Styles pour le pied de page */
+
 footer {
     background-color: #333;
     color: #fff;
@@ -75,8 +74,8 @@ footer {
 
 
 .citation {
-border: 1px solid #ddd; /* Couleur de la bordure */
-background-color: #f9f9f9; /* Couleur de fond */
-padding: 10px; /* Espace intérieur */
-margin: 20px 0; /* Marge extérieure */
+border: 1px solid #ddd; 
+background-color: #d9e0fe; 
+padding: 10px; 
+margin: 20px 0; 
 }
