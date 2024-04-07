@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 960px; /*960px Largeur maximale du conteneur */
     margin: 0 auto;
     padding: 20px;
 }
@@ -95,36 +95,91 @@ margin: 20px 0;
     margin-right: 10px; /* Marge entre les boutons */
 }
 
-
 .education-item {
-    border: 2px solid #007bff; /* Couleur et épaisseur de la bordure */
-    padding: 20px; /* Espace intérieur */
-    border-radius: 10px; /* Bordure arrondie */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre */
-    position: relative; /* Permet de positionner l'image à l'intérieur */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
+
+.education-item h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
 .education-item img {
-    position: absolute; /* Permet de positionner l'image de manière absolue à l'intérieur du cadre */
-    top: 10px; /* Décalage vers le haut */
-    right: 10px; /* Décalage vers la droite */
+    margin: 0 auto 10px;
+    display: block;
+}
+
+
+
+
+#projets {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#publications {
+    text-align: center;
+}
+#skills {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#education {
+    text-align: center;
+}
+
+#contact {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.skill-category {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
 .skill {
-    border: 2px solid #007bff; /* Couleur et épaisseur de la bordure */
-    padding: 20px; /* Espace intérieur */
-    border-radius: 10px; /* Bordure arrondie */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre */
-    margin-bottom: 20px; /* Marge inférieure */
-    position: relative; /* Permet de positionner l'image à l'intérieur */
+    margin-bottom: 30px;
 }
 
 .skill h3 {
-    margin-top: 0; /* Supprimer la marge supérieure du titre */
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-/* Style des compétences */
 .skill p {
-    margin: 0; /* Supprimer les marges */
+    font-size: 18px;
+}
+
+.skill-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 
