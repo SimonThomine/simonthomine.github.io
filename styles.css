@@ -260,3 +260,13 @@ p {
     font-size: 16px; /* Taille de la police du paragraphe */
     line-height: 1.5; /* Hauteur de ligne pour une meilleure lisibilité */
 }
+
+
+
+#miscellaneous {
+    /* Ajoutez vos styles CSS ici */
+}
+
+.miscellaneous-item {
+    /* Styles pour les éléments individuels de Miscellaneous */
+}
