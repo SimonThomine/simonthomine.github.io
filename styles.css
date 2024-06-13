@@ -61,9 +61,10 @@ footer {
 
 .citation {
 border: 1px solid #ddd; 
-background-color: #d9e0fe; 
+background-color: #d9e0fe3a; 
 padding: 10px; 
 margin: 20px 0; 
+font-style: italic;
 }
 
 
@@ -93,8 +94,9 @@ margin: 20px 0;
 
 .education-item h3 {
     color: #333;
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 3px;
+    margin: 0; 
 }
 
 .education-item p {
@@ -170,10 +172,10 @@ h2 {
 
 
 .publi {
-    padding: 20px; /* Espace intérieur */
+    padding: 10px; /* Espace intérieur */
     border-radius: 10px; /* Bordure arrondie */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre */
-    margin-bottom: 20px; /* Marge inférieure */
+    margin-bottom: 5px; /* Marge inférieure */
     position: relative; /* Permet de positionner l'image à l'intérieur */
 }
 
@@ -268,4 +270,10 @@ p {
 .flex-item {
     flex: 1 1 30%; /* Flex-grow, flex-shrink, and flex-basis */
     box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.flex-item {
+    flex: 1;
+    min-width: 45%; /* Ajustez cette valeur pour contrôler la largeur minimale des éléments */
+    box-sizing: border-box;
 }
