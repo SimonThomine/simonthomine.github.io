@@ -6,20 +6,6 @@ body {
     padding: 0;
 }
 
-.container {
-    max-width: 960px; /*960px Largeur maximale du conteneur */
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.container-flex{
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex; 
-    align-items: center; 
-}
-
 .profile {
     margin-right: 20px; 
 }
@@ -86,7 +72,7 @@ margin: 20px 0;
     width: 50px; /* Taille du bouton */
     height: 50px; /* Taille du bouton */
     border-radius: 50%; /* Bordure ronde */
-    background-color: #007bff; /* Couleur de fond */
+    background-color: #00030793; /* Couleur de fond */
     color: white; /* Couleur du texte */
     text-align: center;
     line-height: 50px; /* Centrer le texte verticalement */
@@ -98,8 +84,8 @@ margin: 20px 0;
 .education-item {
     border: 2px solid #ccc;
     border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 5px;
+    margin-bottom: 5px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -107,14 +93,14 @@ margin: 20px 0;
 
 .education-item h3 {
     color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 3px;
 }
 
 .education-item p {
     color: #666;
-    font-size: 16px;
-    margin-bottom: 5px;
+    font-size: 10px;
+    margin-bottom: 3px;
 }
 
 .education-item img {
@@ -148,7 +134,7 @@ margin: 20px 0;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -160,12 +146,12 @@ h2 {
 .skill-category {
     border: 2px solid #ccc;
     border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
 }
 
 .skill {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .skill h3 {
@@ -184,10 +170,18 @@ h2 {
 
 
 .publi {
-    
     padding: 20px; /* Espace intérieur */
     border-radius: 10px; /* Bordure arrondie */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre */
+    margin-bottom: 20px; /* Marge inférieure */
+    position: relative; /* Permet de positionner l'image à l'intérieur */
+}
+
+.publi-highlight {
+    
+    padding: 20px; /* Espace intérieur */
+    border-radius: 10px; /* Bordure arrondie */
+    box-shadow: 0 0 10px rgba(201, 197, 3, 0.692); /* Ombre */
     margin-bottom: 20px; /* Marge inférieure */
     position: relative; /* Permet de positionner l'image à l'intérieur */
 }
@@ -263,10 +257,15 @@ p {
 
 
 
-#miscellaneous {
-    /* Ajoutez vos styles CSS ici */
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if they don't fit in one row */
+    gap: 20px; /* Adjust the gap between items */
 }
 
-.miscellaneous-item {
-    /* Styles pour les éléments individuels de Miscellaneous */
+/* Individual item styling */
+.flex-item {
+    flex: 1 1 30%; /* Flex-grow, flex-shrink, and flex-basis */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
