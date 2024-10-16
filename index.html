@@ -1,296 +1,255 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Home</a></li>
-                <li><a href="#projets">Projects</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Simon Thomine</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
 
-    <section id="accueil">
-        <div class="container">
-            <div class="profile">
-                <img src="images/photo.jpeg"width="800" alt="Photo"> 
-            </div>
-            <div class="content">
-                <h2>Simon Thomine</h2>
-                <p>I am a Ph.D. student in computer vision and deep learning at the University of Technology of Troyes. 
-                    My current research focuses on industrial unsupervised anomaly detection, particularly in textures. 
-                    In addition to my academic pursuits, I am actively working towards making AI accessible to a wider audience 
-                    through personal projects.</p>
-                <a class="round-btn" href="https://www.linkedin.com/in/simon-thomine-287920170/"><i class="fa fa-linkedin-square"></i></a>
-                <a class="round-btn" href="https://scholar.google.com/citations?user=byv8WSAAAAAJ&hl=fr"><i class="fa fa-google"></i></a>
-                <a class="round-btn" href="https://github.com/SimonThomine"><i class="fa fa-github"></i></a>
-                <a class="round-btn" href="https://huggingface.co/SimTho">&#129303;</a><br>
-                <div class="email-address">
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:simonthomine66@gmail.com">simonthomine66@gmail.com</a>
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:simon.thomine@utt.fr">simon.thomine@utt.fr</a>
-                </div><br>
-            </div>
+    <div id="dhead" class="container">
+      <div class="row">
+        <div id="dpic">
+          <img src="images/photo.jpeg" class="ppic" />
         </div>
-    </section>
-    
-    <section id="projets">
-        <div class="container">
-            <h2>My projects &#128736;</h2>
-            <div class="publi-highlight">
-                <h3>🚀 Apprendre le Deep Learning à partir de zéro 🚀</h3>
-                <p>This project is a French-language course designed to teach deep learning from scratch, requiring only basic 
-                    Python and mathematical knowledge. It aims to provide a comprehensive introduction to the core principles of 
-                    deep learning, all within a single GitHub repository regrouping various notebook-based lessons. 
-                    I believe that making AI accessible to a wider audience is crucial in today's world, given the growing presence 
-                    of AI in our daily lives.
-                </p>
-                <img src="images/banner_comic.webp" alt="course banner" width="850" height="450"><br>
-                <a class="round-btn" href="https://simonthomine.github.io/CoursDeepLearning/"><i class="fa fa-at"></i></a>
-                <a class="round-btn" href="https://github.com/SimonThomine/CoursDeepLearning"><i class="fa fa-github"></i></a>
-                
-                
-            </div>
-            <div class="container-flex">
-                
-                <div class="publi flex-item">
-                    <h3>🏭 Industrial Defect Generator 🏭</h3>
-                    <p>This project introduce a new library dessigned to generate synthetic defects based on proposed methods from the litterature.</p>
-                    <img src="images/Nsa.png" alt="Nsa defect generation example" width="400" height="180" ><br>
-                    <a class="round-btn" href="https://github.com/SimonThomine/IndustrialDefectLib"><i class="fa fa-github"></i></a>
-                    <a class="round-btn" href="https://huggingface.co/spaces/SimTho/IndustrialDefects">&#129303;</a>
-                </div>
-
-                <div class="publi flex-item">
-                    <h3>🧵 Industrial textile dataset 🧵</h3>
-                    <p>This project introduces a new fabric anomaly dataset with 10 textile categories captured using high-resolution factory cameras.</p>
-                    <img src="images/ITD.png" alt="Examples of defect-free and defective images from ITD" width="400" height="180"><br>
-                    <a class="round-btn" href="https://github.com/SimonThomine/IndustrialTextileDataset"><i class="fa fa-github"></i></a>
-                </div>
-            </div>
-    
-            <div class="container-flex">
-                
-                <div class="publi flex-item">
-                    <h3>🏭⚗ Distillation Industrial Anomaly Detection ⚗🏭</h3>
-                    <p>This project regroups advanced methods utilizing knowledge distillation for unsupervised anomaly detection.</p>
-                    <img src="images/STPM.png" alt="STPM figure" width="400" height="180"><br>
-                    <a class="round-btn" href="https://github.com/SimonThomine/DistillationAD"><i class="fa fa-github"></i></a>
-                </div>
-                <div class="publi flex-item">
-                    <h3>Implementation of Remembering Normality</h3>
-                    <p>Implementation of the paper "Remembering Normality: Memory-guided Knowledge Distillation for Unsupervised Anomaly Detection"</p>
-                    <img src="images/RememberingNormality.png" alt="RN figure" width="400" height="180"><br>
-                    <a class="round-btn" href="https://openaccess.thecvf.com/content/ICCV2023/papers/Gu_Remembering_Normality_Memory-guided_Knowledge_Distillation_for_Unsupervised_Anomaly_Detection_ICCV_2023_paper.pdf">&#128220;</a>
-                    <a class="round-btn" href="https://github.com/SimonThomine/RememberingNormality"><i class="fa fa-github"></i></a>
-                </div>
-            </div>
-    
+        <div id="ddesc">
+          <h1>Simon Thomine</h1>
+          <h2>Passionate about deep learning 🤖🧠</h2>
+          <div id="dico">
+            <a href="https://github.com/SimonThomine"><img src="images/cgithub.svg" class="iico"/></a>
+            <a href="https://www.linkedin.com/in/simon-thomine-287920170/"><img src="images/linkedin.svg" class="iico" /></a>
+            <a href="https://huggingface.co/SimTho"><img src="images/hugging.svg" class="iico" /></a>
+            <a href="images/CV_Eng.pdf"><img src="images/cv2.svg" class="iico" /></a>
+            <img src="images/cemail.svg" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" />
+          </div>
+          <div id="demail" style="opacity: 1;">
         </div>
-    </section>
-
-
-
-
-    <section id="publications">
-        <div class="container">
-            <h2>Publications &#128218;</h2>
-            <div class="publi">
-                <h3>CSE: Surface Anomaly Detection with Contrastively Selected Embedding <a class="round-btn" href="https://arxiv.org/pdf/2403.01859.pdf">&#128220;</a>
-                    <a class="round-btn" href="https://github.com/SimonThomine/CSE"><i class="fa fa-github"></i></a></h3>
-                <!-- <img src="images/CSE.png" alt="CSE" width="760" height="250"><br> -->
-                <div class="citation">
-                    <p>Thomine, Simon and Hichem Snoussi. "CSE: Surface Anomaly Detection with Contrastively Selected Embedding." 2024 International Conference on Computer Vision Theory and Applications (VISAPP 2024). 2024.</p>
-                </div> 
-                
-
-            </div>
-            <div class="publi">
-                <h3>Distillation-based fabric anomaly detection <a class="round-btn" href="https://arxiv.org/pdf/2401.02287.pdf">&#128220;</a>
-                    <a class="round-btn" href="https://github.com/SimonThomine/DBFAD"><i class="fa fa-github"></i></a></h3>
-                <!-- <img src="images/DistillBased.png" alt="DBFAD" width="760" height="320"><br> -->
-                <div class="citation">
-                    <p>Thomine, Simon, and Hichem Snoussi. "Distillation-based fabric anomaly detection." Textile Research Journal 94.5-6 (2024): 552-565.</p>
-                </div>
-                
-            </div>
-            <div class="publi">
-                
-                <h3>Dual Model Knowledge Distillation for Industrial Anomaly Detection <a class="round-btn" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4493018">&#128196;</a> </h3>
-                <div class="citation">
-                    <p>Thomine, Simon and Snoussi, Hichem, "Dual Model Knowledge Distillation for Industrial Anomaly Detection."" Pattern Analysis and Applications (accepted preprint) </p>
-                </div>
-            </div>
-            <div class="publi">
-                <h3>FABLE: Fabric Anomaly Detection Automation Process <a class="round-btn" href="https://arxiv.org/pdf/2306.10089.pdf">&#128220;</a>
-                    <a class="round-btn" href="https://github.com/SimonThomine/FABLE"><i class="fa fa-github"></i></a></h3>
-                <!-- <img src="images/FABLE.png" alt="FABLE" width="760" height="380"><br> -->
-                <div class="citation">
-                    <p>Thomine, Simon, Hichem Snoussi, and Mahmoud Soua. "FABLE: Fabric Anomaly Detection Automation Process." 2023 International Conference on Control, Automation and Diagnosis (ICCAD). IEEE, 2023.</p>
-                </div>
-                
-            </div>
-            <div class="publi">
-                <h3>MixedTeacher: Knowledge Distillation for fast inference textural anomaly detection <a class="round-btn" href="https://arxiv.org/pdf/2306.09859.pdf">&#128220;</a>
-                    <a class="round-btn" href="https://github.com/SimonThomine/MixedTeacher"><i class="fa fa-github"></i></a></h3>
-                <!-- <img src="images/MixedTeacher.png" alt="MixedTeacher" width="760" height="380"><br> -->
-                <div class="citation">
-                    <p>Thomine, Simon, Hichem Snoussi, and Mahmoud Soua. "MixedTeacher: Knowledge Distillation for fast inference textural anomaly detection." 2023 International Conference on Computer Vision Theory and Applications (VISAPP 2023). 2023.</p>
-                </div>
-                
-            </div>
-
         </div>
-    </section>
+      </div>
+    </div>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Skills 💡</h2>
-    
-            <div class="container-flex">
-                <div class="skill-category flex-item">
-                    <div class="skill">
-                        <h3>📚 Theoritical 📚</h3>
-                        <p>
-                            <span class="skill-icon"></span> Convolutional Neural Networks,
-                            <span class="skill-icon"></span> Knowledge Distillation,
-                            <span class="skill-icon"></span> Vision Transformer,
-                            <span class="skill-icon"></span> Object Tracking,
-                            <span class="skill-icon"></span> LLM/VLM,
-                            <span class="skill-icon"></span> Application Development,
-                            <span class="skill-icon"></span> Classical Computer Vision
-                        </p>
-                    </div>
-                </div>
-    
-                <div class="skill-category flex-item">
-                    <div class="skill">
-                        <h3>💻 Software 💻</h3>
-                        <p>
-                            <span class="skill-icon"></span> Python,
-                            <span class="skill-icon"></span> C++,
-                            <span class="skill-icon"></span> Pytorch,
-                            <span class="skill-icon"></span> Transformers,
-                            <span class="skill-icon"></span> Torchvision,
-                            <span class="skill-icon"></span> OpenCV,
-                            <span class="skill-icon"></span> Numpy,
-                            <span class="skill-icon"></span> Pillow,
-                            <span class="skill-icon"></span> Timm,
-                            <span class="skill-icon"></span> Scikit-learn,
-                            <span class="skill-icon"></span> Scikit-image,
-                            <span class="skill-icon"></span> QT,
-                            <span class="skill-icon"></span> TensorRT,
-                            <span class="skill-icon"></span> Git,
-                            <span class="skill-icon"></span> Docker
-                        </p>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="container-flex">
-                <div class="skill-category flex-item">
-                    <div class="skill">
-                        <h3>🎓 Education 🎓</h3>
-                        <p>
-                            <span class="skill-icon"></span> Several teaching experiences at University of Technology of Troyes and ESTP.
-                        </p>
-                    </div>
-                </div>
-    
-                <div class="skill-category flex-item">
-                    <div class="skill">
-                        <h3>🗣️ Languages 🗣️</h3>
-                        <p>
-                            <span class="skill-icon"></span> French (fluent),
-                            <span class="skill-icon"></span> English (proficient),
-                            <span class="skill-icon"></span> Spanish (basic)
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <hr>
+
+    <div id="history" class="container">
+
+      <div class="entry row">
+        <div class="timespan">
+          2024 -
         </div>
-    </section>
-
-    <section id="education">
-        <div class="container">
-            <h2>Education &#x1F393;</h2>
-            <div class="container-flex">
-                <div class="education-item flex-item">
-                    <h3>🎓 Ph.D in Computer Vision and Artificial Intelligence</h3>
-                    <img src="images/utt.png" alt="utt" width="200" height="70">
-                    <strong>🏫 University of Technology of Troyes</strong><br>
-                    <strong>📅 Planned to September 2024</strong><br>
-                    <strong>📝 Visual Anomaly Detection on Surfaces through Unsupervised Learning for the Future Industry</strong>
-                </div>
-                <div class="education-item flex-item">
-                    <h3>🔧 Engineer's degree in Application Development for Image Processing</h3>
-                    <div style="display: flex; align-items: center;">
-                        <img src="images/tse.svg" alt="tse" width="200" height="70" style="margin-right: 20px;">
-                        <img src="images/laval.png" alt="laval" width="200" height="70" style="margin-right: 20px;">
-                    </div>
-                    <strong>🏫 Télécom Saint-Etienne and Université Label</strong><br>
-                    <strong>📅 September 2020</strong><br>
-                    <strong>📝 Image application development</strong><br>
-                </div>
-            </div>
-            <div class="container-flex">
-                <div class="education-item flex-item">
-                    <h2><img src="images/coursera.png" alt="tse" width="200" height="50"></h2>
-                    <button class="round-btn2" onclick="window.location.href='https://coursera.org/share/c601ff2d9bf9759c7fb469b076c2e43b'">Deep Learning Specialization</button>
-                    <button class="round-btn2" onclick="window.location.href='https://coursera.org/share/dfc895bdb027119f5275b2946116a116'">AI for Medicine Specialization</button>
-                </div>
-                <div class="education-item flex-item">
-                    <h2><img src="images/Youtube.png" alt="tse" width="180" height="50"></h2>
-                    <button class="round-btn2" onclick="window.location.href='https://www.youtube.com/playlist?list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg'">Stanford CS109</button>
-                    <button class="round-btn2" onclick="window.location.href='https://www.youtube.com/playlist?list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8'">Stanford CS236 </button>
-                </div>
-            </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="images/vitadx.png" />
         </div>
-    </section>
-    
-    <section id="education">
-        <div class="container">
-            <h2>Miscellaneous &#x1F4AC;</h2>
-            <div class="miscellaneous-item">
-                <h3>French "Three Minute Thesis" presentation</h3>
-                <img src="images/mt180.jpeg" width="500" alt="mt180"><br>
-                <img src="images/Youtube.png" alt="tse" width="100" ><br>
-                <button class="round-btn2" onclick="window.location.href='https://www.youtube.com/watch?v=4kqb3rvnTYM&t=5260s'"> Recorded Youtube Live</button>
-            </div>
+        <div class="desc">
+          Senior computer vision research engineer at <a href="https://www.vitadx.com/">Vitadx</a>. Working on medical imaging and AI.
         </div>
-    </section>
+      </div>
 
+      <div class="entry row">
+        <div class="timespan">
+          2021 - 2024
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="images/aquilae.jpeg" />
+          <img src="images/utt_sqr.jpeg" />
+        </div>
+        <div class="desc">
+            PhD in deep learning from <a href="https://www.utt.fr/">UTT</a> and <a href="https://www.aquilae.fr/">Aquilae</a> , specializing in unsupervised learning for anomaly detection in industrial applications. 
+            Led multiple research and development projects at Aquilae, focusing on industry and security solutions.
+          <div class="hassets" style="height:304px; margin: 20px 0 10px 0;">
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact &#x1F4DE;</h2>
-            <div class="email-address">
-                <i class="fa fa-envelope"></i>
-                <a href="mailto:simon.thomine@utt.fr">simon.thomine@utt.fr</a>
-            </div>
-            <div class="email-address">
-                <i class="fa fa-envelope"></i>
-                <a href="mailto:simonthomine66@gmail.com">simonthomine66@gmail.com</a>
-            </div><br>
-            <a class="round-btn" href="https://www.linkedin.com/in/simon-thomine-287920170/"><i class="fa fa-linkedin-square"></i></a>
-            <a class="round-btn" href="https://scholar.google.com/citations?user=byv8WSAAAAAJ&hl=fr"><i class="fa fa-google"></i></a>
-            <a class="round-btn" href="https://github.com/SimonThomine"><i class="fa fa-github"></i></a>
-            <a class="round-btn" href="https://huggingface.co/SimTho">&#129303;</a>
+            <div class="hasset" style="top: 0; left: 0%; width: 50%;"><img src="images/these.JPG" width="100%" /></a></div>
+            <div class="hasset" style="top: 0; left: 50%; width: 50%;"><img src="images/Visapp2024.jpeg" width="100%" /></a></div>
             
+          </div>
         </div>
-    </section>
+      </div>
+    
+      <div class="entry row">
+        <div class="timespan">
+          2019 - 2020
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="images/laval.png" />
+        </div>
+        <div class="desc">
+            Semester abroad at Laval University in Quebec, Canada, focusing on master-level courses in deep learning and applied mathematics.
+        </div>
+      </div>
 
-</body>
+      <div class="entry row">
+        <div class="timespan">
+          2017 - 2020
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="images/telecom.png" />
+        </div>
+        <div class="desc">
+            Engineering degree in computer vision application development from Telecom Saint-Etienne.
+        </div>
+      </div>
+
+      <div class="entry row">
+        <div class="timespan">
+          2015 - 2017
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="images/encpb.jpg" />
+        </div>
+        <div class="desc">
+            Preparatory classes for engineering schools at ENCPB, Paris.
+        </div>
+      </div>
+
+
+      <div id="pet-projects" class="container">
+        <div class="ctitle">Projects</div>
+  
+        <div class="project">
+          <div class="pico"><img src="images/banner_comic.webp" /></div>
+          <div class="pdesc"> This project is a <a href="https://simonthomine.github.io/CoursDeepLearning/">deep learning 
+            course in French</a> that teaches deep learning from scratch, requiring only basic Python and math knowledge. 
+            It offers a comprehensive introduction to core deep learning principles within a single GitHub repository with 
+            various notebook lessons. Making AI accessible to a wider audience is crucial in today’s world, 
+            given AI's growing presence in our daily lives.</div>
+          <div class="pend"></div>
+        </div>
+        
+        <div class="project">
+            <div class="pico"><img src="images/minCV.png" /></div>
+            <div class="pdesc"><a href="https://github.com/SimonThomine/minCV">minCV</a> is a library designed to simplify 
+                training neural networks for computer vision tasks. Built on top of PyTorch, it offers a clear and 
+                user-friendly code structure for model training and evaluation. (Work in progress)
+            </a></div>
+            <div class="pend"></div>
+          </div>
+
+        <div class="project">
+          <div class="pico"><img src="images/Nsa.png" /></div>
+          <div class="pdesc"><a href="https://github.com/SimonThomine/IndustrialDefectLib">Industrial Defect Generator</a> a new library dessigned to 
+            generate synthetic industrial defects based on proposed methods from the litterature.
+          </a>.</div>
+          <div class="pend"></div>
+        </div>
+  
+        <div class="project">
+          <div class="pico"><img src="images/STPM.png" /></div>
+          <div class="pdesc"><a href="https://github.com/SimonThomine/DistillationAD">Distillation Industrial Anomaly Detection</a> 
+            regroups advanced methods utilizing knowledge distillation for industrial unsupervised anomaly detection.</div>
+          <div class="pend"></div>
+        </div>
+  
+        <div class="project">
+          <div class="pico"><img src="images/ITD.png" /></div>
+          <div class="pdesc"><a href="https://github.com/SimonThomine/IndustrialTextileDataset">Industrial textile dataset</a> introduces a new fabric anomaly dataset with 10 textile categories captured using high-resolution factory cameras.</a>.</div>
+          <div class="pend"></div>
+        </div>
+  
+        <div class="project">
+          <div class="pico"><img src="images/RememberingNormality.png" /></div>
+          <div class="pdesc"><a href="https://github.com/SimonThomine/RememberingNormality">Implementation</a>Implementation of the paper "Remembering Normality: Memory-guided Knowledge Distillation for Unsupervised Anomaly Detection"</a>.</div>
+          <div class="pend"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="ctitle">Publications</div>
+  
+        <div class="pub">
+          <div class="pub-title">Single-Layer Distillation with Fourier Convolutions for Texture Anomaly Detection</div>
+          <div class="pub-venue">WACV 2025</div>
+          <div class="pub-authors">Simon Thomine and Hichem Snoussi</div>
+        </div>
+
+        <div class="pub">
+            <div class="pub-title">Visual Anomaly Detection on Surfaces through Unsupervised Learning for the Future Industry</div>
+            <div class="pub-venue">PhD Thesis 2024</div>
+            <div class="pub-authors">Simon Thomine</div>
+          </div>
+  
+        <div class="pub">
+          <div class="pub-title"><a href="https://journals.sagepub.com/doi/10.1177/00405175241267767?icid=int.sj-abstract.citing-articles.1">Efficient fabric anomaly detection: A transfer learning framework with expedited training times</a></div>
+          <div class="pub-venue">Textile Research Journal 2024</div>
+          <div class="pub-authors">Simon Thomine and Hichem Snoussi</div>
+        </div>
+  
+        <div class="pub">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2403.01859">CSE: Surface Anomaly Detection with Contrastively Selected Embedding</a></div>
+          <div class="pub-venue">VISAPP 2024</div>
+          <div class="pub-authors">Simon Thomine and Hichem Snoussi</div>
+        </div>
+  
+        <div class="pub">
+          <div class="pub-title"><a href="https://link.springer.com/article/10.1007/s10044-024-01295-8?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=nonoa_20240702&utm_content=10.1007%2Fs10044-024-01295-8">Dual Model Knowledge Distillation for Industrial Anomaly Detection</a></div>
+          <div class="pub-venue">Pattern Analysis and Applications 2024</div>
+          <div class="pub-authors">Simon Thomine and Hichem Snoussi</div>
+        </div>
+  
+        <div class="pub">
+          <div class="pub-title"><a href="https://arxiv.org/pdf/2401.02287.pdf">Distillation-based fabric anomaly detection</a></div>
+          <div class="pub-venue">Textile Research Journal 2024</div>
+          <div class="pub-authors">Simon Thomine and Hichem Snoussi</div>
+        </div>
+  
+        <div class="pub">
+          <div class="pub-title"><a href="https://arxiv.org/pdf/2306.10089.pdf">FABLE: Fabric Anomaly Detection Automation Process</a></div>
+          <div class="pub-venue">ICCAD 2023</div>
+          <div class="pub-authors">Simon Thomine, Hichem Snoussi and Mahmoud Soua</div>
+        </div>
+  
+        <div class="pub">
+          <div class="pub-title"><a href="https://arxiv.org/pdf/2306.09859.pdf">ImageNet Large Scale Visual Recognition Challenge</a></div>
+          <div class="pub-venue">VISAPP 2023</div>
+          <div class="pub-authors">Simon Thomine, Hichem Snoussi and Mahmoud Soua</div>
+        </div>
+  
+      </div>
+
+
+
+
+    
+    <div style="background-color: #eee; padding-top: 1px; margin-top: 10px;">
+      <div id="featured-talks" class="container">
+        <div class="ctitle">Miscellaneous</div>
+        <div class="row">
+          <div class="card">
+            <a href="https://www.youtube.com/watch?v=4kqb3rvnTYM&t=5260s">
+              <div class="ccimg"><img src="images/mt180.jpeg" /></div>
+            </a>
+            <div class="cdesc">Ma thèse en 180 secondes</div>
+          </div>
+          <div class="card">
+            <a href="https://www.coursera.org/account/accomplishments/specialization/PS8EAQB595UN?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n">
+              <div class="ccimg"><img src="images/dl_specialization.jpeg" /></div>
+            </a>
+            <div class="cdesc">Deep Learning specialization</div>
+          </div>
+          <div class="card">
+            <a href="https://www.coursera.org/account/accomplishments/specialization/37HMLGXRNAVR?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n">
+              <div class="ccimg"><img src="images/ai_medcine.jpeg" /></div>
+            </a>
+            <div class="cdesc">AI for Medicine Specialization</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var e_is_shown = false;
+      document.getElementById('iemail').addEventListener("click", function(){
+        let demail = document.getElementById('demail');
+        let msg = "simonthomine66@gmail.com"
+        demail.innerHTML = msg;
+        demail.style.opacity = e_is_shown ? 0 : 1;
+        e_is_shown = !e_is_shown;
+      })
+    </script>
+  </body>
 </html>
